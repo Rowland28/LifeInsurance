@@ -3,34 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 
 
 namespace Calculating_life_insurance_quotes
 {
         class Program
-    {  
-    
-        static void Main(string[] args)
     {
-        double Total = 0;
-        string Gender;
 
-        Console.WriteLine("Please enter your gender: (Male or Female)");
-        Gender = Console.ReadLine();
+        static void Main(string[] args)
+        {
+            double Total = 0;
+            string Gender;
 
-        Console.WriteLine("Gender: " + Gender);
+            Console.WriteLine("Please enter your gender: (Male or Female)");
+            Gender = Console.ReadLine();
+            Gender = Gender.ToLower();
 
-        //Console.ReadLine();
+            Console.WriteLine("Gender: " + Gender);
+                                       
 
-        int Age;
-        Console.WriteLine("Please enter how old you are");
+            //Console.ReadLine();
 
-        Age = int.Parse(Console.ReadLine()); 
+            int Age;
+            Console.WriteLine("Please enter how old you are");
 
-        Console.WriteLine("age: " + Age);
+            Age = int.Parse(Console.ReadLine());
 
-        //Console.ReadLine();
+            Console.WriteLine("age: " + Age);
+
+            //Console.ReadLine();
 
             if ((Gender == "male") && Age <= 18) Console.WriteLine(Total = 150);
 
@@ -88,6 +91,8 @@ namespace Calculating_life_insurance_quotes
             Console.WriteLine("Please enter your Country:");
             Country = Console.ReadLine();
 
+            Country = Country.ToLower();
+
             if (Country == "england") Console.WriteLine(Total);
 
             else
@@ -116,6 +121,8 @@ namespace Calculating_life_insurance_quotes
             Console.WriteLine("Do you have children? yes or no");
             Child = Console.ReadLine();
 
+            Child = Child.ToLower();
+
             if (Child == "yes") Console.WriteLine(Total = Total * 1.5);
 
             else
@@ -131,6 +138,8 @@ namespace Calculating_life_insurance_quotes
 
             Console.WriteLine("Are you a smoker? yes or no");
             Smoker = Console.ReadLine();
+
+            Smoker = Smoker.ToLower();
 
             if (Smoker == "yes") Console.WriteLine(Total = Total * (3));
 

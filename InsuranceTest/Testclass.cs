@@ -3,22 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework
+using NUnit.Framework;
 
-namespace InsuranceTest
+namespace Calculating_life_insurance_quotesTest
 {
     [TestFixture]
-    public class Testclass
+    public class ProgramTest
     {
 
         [Test]
-        public void Test1()
+        public void ShouldAddTo100()
         {
+            double Total = 0;
+            string Gender = "male";
+            int Age = 22;
+            String Country = "england";
+            String Child = "no";
+            String Smoker = "yes";
+            int Exercise = 2;
 
-
+            
 
         }
 
-
     }
+    
 }

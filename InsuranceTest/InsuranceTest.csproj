@@ -50,6 +50,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculating life insurance quotes\Calculating life insurance quotes.csproj">
+      <Project>{41548ea0-3e1a-4d44-a12c-7a5aa40b1a69}</Project>
+      <Name>Calculating life insurance quotes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
