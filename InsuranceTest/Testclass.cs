@@ -12,15 +12,9 @@ namespace Calculating_life_insurance_quotesTest
     {
 
         [Test]
-        public void ShouldAddTo100()
+        public void 
         {
-            double Total = 0;
-            string Gender = "male";
-            int Age = 22;
-            String Country = "england";
-            String Child = "no";
-            String Smoker = "yes";
-            int Exercise = 2;
+           
 
             
 
