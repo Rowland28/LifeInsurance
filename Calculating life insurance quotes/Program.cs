@@ -183,7 +183,7 @@ namespace Calculating_life_insurance_quotes
             if (Total <= 50) Console.WriteLine(Total = 50);
 
             else
-            Console.WriteLine(Total);
+            Console.WriteLine("Your Life Insurance quote is £" + Total);
             Console.ReadLine();
         }
 
